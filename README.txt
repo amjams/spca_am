@@ -100,3 +100,6 @@ Singapore University of Technology and Design
 Prof. Stefano Galelli
 Prof. Selin Damla Ahipasaoglu
    
+Politecnico di Milano
+Prof. Andrea Castelletti
+Matteo Giuliani
