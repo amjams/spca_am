@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Description:
 
-This is a Sparse Principal Component Analysis (SPCA) Toolbox which Perfroms 8 formulations of the SPCA algorithm of Richtárik et. al [1]
+This is a Sparse Principal Component Analysis (SPCA) Toolbox which Perfroms 8 formulations of the SPCA algorithm of Richtï¿½rik et. al [1]
 Refer to [1] before using this Toolbox
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,7 +48,7 @@ Function description:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Guidlines:  (Refer to [1] for more details)
+Guidelines:  (Refer to [1] for more details)
 The following are guidelines for parametrizing the problem
 
 1- The 8 SPCA formulation
@@ -82,7 +82,7 @@ and expect sparsity to increase with gamma.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Reference:
-[1] Peter Richtárik,  Martin Taká?, S. Damla Ahipasaoglu. 
+[1] Peter Richtï¿½rik,  Martin Takï¿½?, S. Damla Ahipasaoglu. 
 Alternating Maximization: Unifying Framework for 8 Sparse PCA Formulations and
 Efficient Parallel Codes
 https://code.google.com/p/24am/
@@ -95,4 +95,8 @@ July, 2014
 contact: ahmadalsahaf@gmail.com
 
 
+Acknowledgement:
+Singapore University of Technology and Design
+Prof. Stefano Galelli
+Prof. Selin Damla Ahipasaoglu
    
