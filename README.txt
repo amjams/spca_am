@@ -95,7 +95,7 @@ July, 2014
 contact: ahmadalsahaf@gmail.com
 
 
-Acknowledgement:
+Acknowledgements:
 Singapore University of Technology and Design
 Prof. Stefano Galelli
 Prof. Selin Damla Ahipasaoglu
