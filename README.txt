@@ -37,7 +37,7 @@ Function description:
 % var_type       the norm of the variance of the objective function (1 or 2)
 % penalty        1 if penalty, 0 if contraint
 % norm_type      type of norm for the constraint or penalty (1 or 0)
-% gamma         if penalty, S if contraint  (Readme.txt file for details)
+% gamma          if penalty, S if contraint  (Readme.txt file for details)
 % maxIter        maximum number of iteration
 % STOP           stopping criteria
 % outputs:
