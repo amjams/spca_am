@@ -4,7 +4,7 @@
 % using different sparsity for each component
 %
 % Refer to "spca_am.m" and "spca_am_multi.m" and [1] for details
-% [1] Peter Richtárik,  Martin Taká?, S. Damla Ahipasaoglu. Alternating
+% [1] Peter Richtï¿½rik,  Martin Takï¿½?, S. Damla Ahipasaoglu. Alternating
 % Maximization: Unifying Framework for 8 Sparse PCA Formulations and
 % Efficient Parallel Codes
 % https://code.google.com/p/24am/
@@ -55,7 +55,7 @@ norm_type = 0;                      %norm type on penalty or constraint
 
 
 gamma = [4 3 2];                    %gamma (or S) vector 
-                                    %Note: gamme should be a vector of dimension
+                                    %Note: gamma should be a vector of dimension
                                     %'ns' to specify the desired sparsity
                                     %for each components. Otherwise, the
                                     %first element of gamma will be
