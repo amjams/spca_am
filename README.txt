@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Description:
 
-This is a Sparse Principal Component Analysis (SPCA) Toolbox which Perfroms 8 formulations of the SPCA algorithm of Richt�rik et. al [1]
+This is a Sparse Principal Component Analysis (SPCA) Toolbox which Performs 8 formulations of the SPCA algorithm of Richt�rik et. al [1]
 Refer to [1] before using this Toolbox
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
