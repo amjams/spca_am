@@ -1,9 +1,9 @@
 
-function [all_pc, EV, sparsity] = spca_am_multi(ns, x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP);
+function [all_pc, EV, sparsity] = spca_am_multi(ns, x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP, deflationType);
 
-% Perfroms 8 formulations of the SPCA algorithm of Richtárik et. al [1] and
+% Perfroms 8 formulations of the SPCA algorithm of Richt?rik et. al [1] and
 % finds multiple sparse principal component coefficients
-% [all_pc EV] = spca_am_multi(ns, x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP)
+% [all_pc EV] = spca_am_multi(ns, x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP, deflationType)
 % inputs:
 % ns             number of sparse components coefficients to be computed
 % x0             the intial condition for the loadings vectors 
@@ -14,13 +14,14 @@ function [all_pc, EV, sparsity] = spca_am_multi(ns, x1, A, var_type, penalty, no
 % gamma         if penalty, S if contraint  (Readme.txt file for details)
 % maxIter        maximum number of iteration
 % STOP           stopping criteria
+% defaltionType  Type of deflation used (See deflate.m) [default value=1]
 % outputs:
 % all_pc         all loadings vectors
 % EV             the adjusted explained variance for each component
 % sparsity       number of non-zero coefficients of the resulting vectors
 %
 % References:
-% [1] Peter Richtárik,  Martin Taká?, S. Damla Ahipasaoglu. Alternating
+% [1] Peter Richt?rik,  Martin Tak??, S. Damla Ahipasaoglu. Alternating
 % Maximization: Unifying Framework for 8 Sparse PCA Formulations and
 % Efficient Parallel Codes
 % https://code.google.com/p/24am/
@@ -32,6 +33,10 @@ function [all_pc, EV, sparsity] = spca_am_multi(ns, x1, A, var_type, penalty, no
 % MSc student at Politecnico di Milano
 % July, 2014
 
+if nargin < 10
+    deflationType = 1;
+end
+    
 
 p = size(x1,1);                  %number of variables
 n = size(A,1);                   %number of observations
@@ -62,7 +67,7 @@ for i = 1:ns
     sparsity(i) = sparsity_now;
     
     Ac_cov = cov(Ac);
-    Ac_cov_ = deflate(Ac_cov,current_pc);            %deflate current cov with the current coeff vector
+    Ac_cov_ = deflate(Ac_cov,current_pc,deflationType);            %deflate current cov with the current coeff vector
     [Vg Dg] = eig(Ac_cov);                           %get the data matrix of the delated cov matrix
     Ac = Vg*sqrt(abs(Dg))*Vg';
     disp(strcat('SPCA #',num2str(i,'%02d')))

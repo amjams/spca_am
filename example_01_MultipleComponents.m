@@ -4,7 +4,7 @@
 % using different sparsity for each component
 %
 % Refer to "spca_am.m" and "spca_am_multi.m" and [1] for details
-% [1] Peter Richt�rik,  Martin Tak�?, S. Damla Ahipasaoglu. Alternating
+% [1] Peter Richt???rik,  Martin Tak????, S. Damla Ahipasaoglu. Alternating
 % Maximization: Unifying Framework for 8 Sparse PCA Formulations and
 % Efficient Parallel Codes
 % https://code.google.com/p/24am/
@@ -62,9 +62,10 @@ gamma = [4 3 2];                    %gamma (or S) vector
                                     %replicated for all coefficients 
 maxIter = 200;                      %maximum number of iterations
 STOP = 1+1e-6;                      %stopping criterion
+deflationType = 1;                  %Deflation type (See deflate.m)
 
 
-[all_coeff, EV, sparsity] = spca_am_multi(ns,x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP);
+[all_coeff, EV, sparsity] = spca_am_multi(ns,x1, A, var_type, penalty, norm_type,gamma, maxIter, STOP, deflationType);
 
 
 
