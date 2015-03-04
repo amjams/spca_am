@@ -4,6 +4,12 @@ Description:
 This is a Sparse Principal Component Analysis (SPCA) Toolbox which Performs 8 formulations of the SPCA algorithm of Richt�rik et. al [1]
 Refer to [1] before using this Toolbox
 
+Update 01:
+March, 3rd 2015 
+New deflation methods added to “deflate.m”, which can be used for finding multiple
+sparse components using “spca_am_multi.m”
+see [2] for details on deflation methods for Sparse PCA.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Content:
@@ -86,6 +92,8 @@ Reference:
 Alternating Maximization: Unifying Framework for 8 Sparse PCA Formulations and
 Efficient Parallel Codes
 https://code.google.com/p/24am/
+
+[2] Mackey, Lester W. "Deflation methods for sparse PCA." Advances in neural information processing systems. 2009.
 
 
 Developed by:
